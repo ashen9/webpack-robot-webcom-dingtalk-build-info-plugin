@@ -1,0 +1,17 @@
+{
+  "name": "webpack-robot-webcom-dingtalk-build-info-plugin",
+  "version": "1.0.9",
+  "description": "通过企业微信机器人发送构建通知",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack", "plugin", "WbCom", "robot", "build", "info"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "author": "ashen9",
+  "license": "MIT"
+}
