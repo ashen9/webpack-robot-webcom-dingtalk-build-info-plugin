@@ -13,8 +13,8 @@ EXAMPLE:
     const RobotBuildInfo = require('webpack-robot-webcom-dingtalk-build-info-plugin');
     plugins:[
         ...,
-      // config.plugins.push(new WeComRobotBuildInfo({robot: 'wecom', infoList: [{ ip: 'XXX.16.1.XXX', key: '70a2b2f9-4b11-4cb5-9ba7-050777555XXX', usr: ['1392099XXXX', '@all']}] }))
-      config.plugins.push(new RobotBuildInfo({ robot: 'dingtalk', infoList: [{ ip: 'XXX.16.1.XXX', key: '4cf8e6a7ad3f59788c4d730b581a0df224b33357558f50565c0a470855d23XXX', usr: ['1392099XXXX', '@all'] }] }))
+      // new RobotBuildInfo({robot: 'wecom', infoList: [{ ip: 'XXX.16.1.XXX', key: '70a2b2f9-4b11-4cb5-9ba7-050777555XXX', usr: ['1392099XXXX', '@all']}] })
+      new RobotBuildInfo({ robot: 'dingtalk', infoList: [{ ip: 'XXX.16.1.XXX', key: '4cf8e6a7ad3f59788c4d730b581a0df224b33357558f50565c0a470855d23XXX', usr: ['1392099XXXX', '@all'] }] })
      ]
 ```
 ----------

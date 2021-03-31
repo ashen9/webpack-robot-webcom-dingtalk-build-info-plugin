@@ -1,6 +1,6 @@
 {
   "name": "webpack-robot-webcom-dingtalk-build-info-plugin",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "通过企业微信机器人发送构建通知",
   "main": "index.js",
   "scripts": {
