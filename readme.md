@@ -13,13 +13,12 @@ EXAMPLE:
     const RobotBuildInfo = require('webpack-robot-webcom-dingtalk-build-info-plugin');
     plugins:[
         ...,
-      // config.plugins.push(new WeComRobotBuildInfo({robot: 'wecom', infoList: [{ ip: '172.16.1.212', key: '70a2b2f9-4b11-4cb5-9ba7-050777555XXX', usr: ['1392099XXXX', '@all']}] }))
-      config.plugins.push(new RobotBuildInfo({ robot: 'dingtalk', infoList: [{ ip: '172.16.1.162', key: '4cf8e6a7ad3f59788c4d730b581a0df224b33357558f50565c0a470855d23XXX', usr: ['1392099XXXX', '@all'] }] }))
+      // config.plugins.push(new WeComRobotBuildInfo({robot: 'wecom', infoList: [{ ip: 'XXX.16.1.XXX', key: '70a2b2f9-4b11-4cb5-9ba7-050777555XXX', usr: ['1392099XXXX', '@all']}] }))
+      config.plugins.push(new RobotBuildInfo({ robot: 'dingtalk', infoList: [{ ip: 'XXX.16.1.XXX', key: '4cf8e6a7ad3f59788c4d730b581a0df224b33357558f50565c0a470855d23XXX', usr: ['1392099XXXX', '@all'] }] }))
      ]
 ```
 ----------
-##
-Plugin Param：
+##Plugin Param：
 
 |  参数   | 类型  | 必填  | 说明  |
 |  ----  | ----  | ---- |---- |
@@ -29,8 +28,7 @@ Plugin Param：
 | key  | string | 是 |robot的webhook中的key值 |
 | usr  | array | 是 |通知的手机号列表 |
 ----------
-##
-特殊说明：
+##特殊说明：
 ######
 ip：指定构建的ip地址才会启动robot，通常设置为生产模式线上构建的物理地址
 ######
