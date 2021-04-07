@@ -1,5 +1,21 @@
 const axios = require("axios")
+/*
+var jenkins = jenkinsapi.init("http://deployadmin:11eeb16d62c66649a580b7e05eb8cbc3b5@10.106.11.64:83/jenkins");
 
+jenkins.all_jobs({depth: 1}, function(err, data) {
+    if (err){ return console.log(err); }
+    data.forEach(d => {
+        console.log(d)
+    })
+});
+*/
+
+/*
+jenkins.last_build_info('test_iot_frontend_my-iot-platform_deploy', {depth: 1}, function(err, data) {
+    if (err){ return console.log(err); }
+    console.log(data)
+});
+*/
 class robot_build_info {
   constructor(options) {
     this.options = options.infoList;
@@ -44,7 +60,8 @@ class robot_build_info {
                     构建者IP:${address},
                     构建者系统账户:${username},
                     构建开始时间:${this.GMTToStr(compilation.startTime)},
-                    构建结束时间:${this.GMTToStr(compilation.endTime)}`;
+                    构建结束时间:${this.GMTToStr(compilation.endTime)},
+                    构建版本号：${process.env.VUE_APP_VERSION || null}`;
           let message = {
             'msgtype': 'text',
             'text': {
